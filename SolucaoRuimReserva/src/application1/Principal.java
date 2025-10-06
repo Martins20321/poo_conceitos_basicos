@@ -35,7 +35,7 @@ package application1;
 				
 				Date now = new Date();
 				if(ckin.before(now) || ckout.before(now)) {
-					System.out.println("Error in reservation: Reservation dates for update must be future dates");
+					System.out.println("Error in reservation: Reservation dates for update must be future dates!!!!");
 				}
 				else if(! ckout.after(ckin)) {
 					System.out.println("Error in Reservatio: Check-out date must be after check-in date");
